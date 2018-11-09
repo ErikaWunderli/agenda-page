@@ -83,11 +83,11 @@ h2 {
     flex: 2;
     width: 9px;
     height: 9px;
-    color:  #110C11;
+    color: #110C11;
   }
   
 .main button {
-    background: white;
+    background: #fff;
     border: none;
     width:47px;
     height: 18px;
@@ -207,7 +207,7 @@ h2 {
     margin: 6px;
 }
 .agenda-wrap p {
-    color: black;
+    color: #110C11;
     font-size:16px;
     line-height: 20px;
     font-family: 'Anton', sans-serif;
@@ -400,7 +400,7 @@ input {
 .details-box {
     width: 713px;
     height: 204px;
-    border: 1px solid black;
+    border: 1px solid #110C11;
 }
 .flex-grid {
     display: -webkit-box;
@@ -530,9 +530,10 @@ input {
     background-image: url(img/footer-background.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: black;
+    background-color: #110C11;
     background-blend-mode: screen;
     display: block;
+    position: relative;
     width:1280px;
     height: 359px;
     color: #C5C4C5;
@@ -549,7 +550,7 @@ input {
     padding: 0 10%;
 }
 .footer-text {
-    position: fixed;
-    bottom: 21px;;
+    position: absolute;
+    bottom: 21px;
     left:10%;
 }
