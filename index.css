@@ -98,7 +98,7 @@ h2 {
      flex-direction: column;
    }
    .main ul {
-     flex-direction: row; /* Change this to 'column' to stack the links */
+     flex-direction: row;
      margin-bottom: 1em;
    }
   }
@@ -162,7 +162,7 @@ h2 {
     flex: 3;
     align-items: center;
 }
-.agenda-main button{
+.agenda-main button {
     margin-left: 16px;
 }
 .btn {
@@ -272,8 +272,14 @@ h2 {
     padding:0 12px;
 }
 
-/* .box:active {
+/*  
+    .box:active {
      color: #110C11;}
+    .box:hover {
+    cursor:pointer;
+    .btn:hover {
+    cursor:pointer;
+    }
 */
 
 input {
