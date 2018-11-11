@@ -23,7 +23,8 @@ html {
     background-color: #E5E5E5;
 }
 .container {
-    width: 100%;
+    padding: 0 160px;
+    margin:auto;
 }
 .login-btn {
     font-family: 'Lato', sans-serif;
@@ -52,36 +53,38 @@ h2 {
     width: 126px;
     height: 26px;
 }
-.main {
+nav {
     display: -webkit-box;
       display: -moz-box;
       display: -ms-flexbox;
       display: -webkit-flex;
       display: flex;
     background: #fff;
-    padding: 19px 10%;
+    padding: 19px 160px;
   }
-  .main > ul {
+  nav > ul {
     text-decoration: none;
     list-style-type: none;
     padding: 0;
     margin-top: 2px;
     display: flex;
     flex: 3;
+    
   }
-  .main a {
-    margin-right: 1em;
+ li  > a {
+    margin-left: 48px;
     font-family: 'Lato', sans-serif;
     color: #110C11;
     text-decoration: none;
+    list-style-type: none;
     font-size: 14px;
     line-height: 18px;
     font-weight: bold;
     text-transform: uppercase;
     display:flex;
+      
   }
-  .main > i {
-    display: flex;
+  nav > i {
     justify-content: flex-end;
     flex: 2;
     width: 9px;
@@ -89,7 +92,7 @@ h2 {
     color: #110C11;
   }
   
-.main button {
+nav button {
     background: #fff;
     border: none;
     width:47px;
@@ -97,21 +100,22 @@ h2 {
     margin-left:60px;
   }
  @media screen and (max-width: 575px) {
-   .main {
+   .nav {
      flex-direction: column;
    }
-   .main ul {
+   .nav ul {
      flex-direction: row;
      margin-bottom: 1em;
    }
   }
 .header-container {
     position: relative;
-    padding:10%;
-    width: 100%;
     background-image: url(img/background-pic.jpg);
     background-repeat: no-repeat;
     background-position: center;
+}
+.event {
+    padding: 74px 160px;
 }
 .title {
       display: -webkit-box;
@@ -131,7 +135,6 @@ h2 {
     font-weight: bold;
     font-family: 'Open Sans';
     padding:2px;
-    margin-top:72px;
 }
 .location-date {
     display: -webkit-box;
@@ -145,24 +148,21 @@ h2 {
     font-size:16px;
     line-height: 20px;
     color: #fff;
-    margin-bottom: 25px;
 }
 .location-date p {
     padding: 0 20px;
 }
 .agenda-wrap {
-    padding: 0 10%;
       display: -webkit-box;
       display: -moz-box;
       display: -ms-flexbox;
       display: -webkit-flex;
       display: flex;
+    margin-top: 71px;
     margin-bottom: 32px;
-    margin-top: 64px;
 }
 .agenda-main {
     display: flex;
-    flex: 3;
     align-items: center;
 }
 .agenda-main button {
@@ -229,17 +229,15 @@ h2 {
 }
 #timetable {
     display: block;
-    margin:auto;
-    padding: 0 10%;
+    width: 957px;
 }
 .sessions {
-    padding: 0 10%;
     margin-bottom: 22px;
     margin-top: 44px;
 }
 .search-bar {
-    width: 960px;
-    padding:12px;
+    width: 909px;
+    padding: 24px;
     display: -webkit-box;
       display: -moz-box;
       display: -ms-flexbox;
@@ -278,8 +276,10 @@ h2 {
 /*  
     .box:active {
      color: #110C11;}
+    
     .box:hover {
     cursor:pointer;
+    
     .btn:hover {
     cursor:pointer;
     }
@@ -318,29 +318,24 @@ input {
     padding: 16px;
 }
 .sessions-grid {
-    padding: 0 10%;
     margin-left: 8px;
     display: inline-grid;
-    grid-auto-columns: 4px, 230px, 711px;
-    grid-auto-rows: repeat (4, 204px), auto, repeat (3, 204px);
+    grid-template-columns: 4px, 217px, 711px;
+    grid-template-rows: repeat (4, 204px), auto, repeat (3, 204px);
     grid-column-gap: 14px;
     grid-row-gap: 24px;
 }
-.div-item {
-    grid-column-start: 3;
-    grid-column-end: 4;
-}
+
 .grid-item {
-    grid-column-start: 4;
-    grid-column-end: 5;
     box-shadow: 0px 1px 4px rgba(17, 12, 17, 0.1);
-    width: 713px;
+    width: 711px;
     height: 204px;
     background-color:#fff;
 }
 .event-grid {
-    grid-column-start: 5;
-    grid-column-end: 6;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    
 }
 .item {
     width:199px;
@@ -503,7 +498,7 @@ input {
     grid-column-end: 10;
 }
 .follow-us-column input {
-    border-radius: 25px;
+    border-radius: 50px;
     background-color: #ECEBEC;
     color: #C5C4C5;
     font-family: 'Lato', sans-serif;
@@ -513,6 +508,7 @@ input {
     padding: 11px;
     margin: 0;
     width: 235px;
+    height: 40px;
 }
 .contact-wrap {
     display: -webkit-box;
@@ -553,7 +549,9 @@ input {
 .dark-overlay {
     background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
-    height: 100%;  
+    height: 100%;
+    z-index: 1;
+    position: absolute;
 }
 .footer-box {
     padding: 0 10%;
