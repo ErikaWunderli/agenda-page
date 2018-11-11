@@ -10,9 +10,8 @@
     <link href="index.css" type="text/css" rel="stylesheet" media="screen"/>
 </head> 
 <body>
-  <div class="container">
 <!-- navbar -->
-        <nav class="main">
+        <nav>
              <a><img class="logo" src="img/logo.svg" alt="logo"></a>
              <ul>
                 <li><a href="#News" rel="internal">News</a></li>
@@ -21,11 +20,14 @@
                 <li><a href="#Startup" rel="internal">Startup</a></li>
                 <li><a href="#About" rel="internal">About</a></li>
             </ul>
-            <i class="fa fa-search"></i>
-            <button class="login-btn">Login</button>
+            <div> 
+                <i class="fa fa-search"></i>
+                <button class="login-btn">Login</button>
+            </div>
         </nav>
 <!-- header -->
     <div class="header-container">
+        <div class="event">
       <div class="title">UNLEASH World Conference &amp; Expo</div>
       <div class="location-date">
           <i class="fa fa-map-marker"></i>
@@ -36,17 +38,20 @@
       <h1>Agenda</h1>
       <div class="book-button">
         <button class="book-btn">book now</button></div>
+        </div>
     </div>
 <!-- agenda at glance -->
+    <div class="container">
     <div class="agenda-wrap">
         <div class="agenda-main">
         <h2>Agenda at glance</h2>
         <button class="btn active"> Day 1</button>
             <button class="btn"> Day 2</button></div>
-          <div title="Add to Calendar" class="addevent"><i class="fa fa-calendar"></i>Add to Calendar
+          <div class="addevent"><i class="fa fa-calendar"></i>Add to Calendar
           </div>
     </div>
-    <img id="timetable" src="img/timetable.png" alt="timetable of events">
+        <div class="img-container">
+            <img id="timetable" src="img/timetable.png" alt="timetable of events"></div>
 <!--sessions-->
     <div class="sessions">
         <h2>Sessions</h2>
@@ -233,6 +238,7 @@
          </div>
     </div>
     </div>
+    </div>
 <!-- Footer -->
 <footer>
     <div class="footer">
@@ -273,7 +279,6 @@
     </div>
     </div>
 </footer>
-</div>
 <!--  Scripts-->    
 <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
 
